@@ -1,19 +1,12 @@
 export class Movie {
-    title: string;
-    year: number;
-    country: string;
-    slogan: string;
-    genres: string[];
-    duration: string;
-
-    constructor(title: string, year: number, country: string, slogan: string, genres: string[], duration: string) {
-        this.title = title;
-        this.year = year;
-        this.country = country;
-        this.slogan = slogan;
-        this.genres = genres;
-        this.duration = duration;
-    }
+    constructor(
+        public title: string,
+        public year: number,
+        public country: string,
+        public slogan: string,
+        public genres: string[],
+        public duration: string
+    ) {}
 
     displayInfo() {
         return `
